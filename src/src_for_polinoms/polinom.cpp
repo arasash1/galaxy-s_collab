@@ -143,6 +143,8 @@ Polynom Polynom::operator-(Polynom& p)
     p = p * c;
     res = *this + p;
 
+    res.DelCoeffZero();
+
     return res;
 }
 
